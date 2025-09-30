@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://4n6eqt4fsos0"]
+
+[ext_resource type="PackedScene" uid="uid://bxwai2anx1xes" path="res://models/floor_tile_large.gltf" id="1_ocpcj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6q8j0"]
+size = Vector3(4, 0.15, 4)
+
+[node name="FloorTiled1" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.92063e-06, -0.025, 0)
+shape = SubResource("BoxShape3D_6q8j0")
+
+[node name="floor_tile_large2" parent="." instance=ExtResource("1_ocpcj")]
